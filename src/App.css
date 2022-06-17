@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +40,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-pagination{
+  margin: 10px;
+}
+.item-pagination a{
+  color: blue
+}
+.pagination button{
+  margin: 10px;
+}
+.number{
+  font-size: 18px;
+}
+.active{
+  padding: 5px;
+  color: black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+.foc-page{
+  margin: 10px;
+}
+.table-one{
+  width: 600px;
+  height: 400px;
+}
+.table-one th:first-child,
+.table-one th:nth-child(2){
+  width: 20%;
+}
+
+.filt{
+  display: flex; 
+  margin: 10px;
+}
+.filt .search{
+  margin: 0 0 0 20px;
 }
